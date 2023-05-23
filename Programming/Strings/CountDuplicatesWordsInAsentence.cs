@@ -8,7 +8,7 @@ namespace Programming.Strings
 {
     internal class CountDuplicatesWordsInAsentence
     {
-        public static void eain()
+        public static void Main()
         {
             
             String s = "I am I am a software engineer doing engineer I am software";

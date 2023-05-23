@@ -8,7 +8,7 @@ namespace Programming.Strings
 {
     internal class PositionOfEachCharacterInAString
     {
-        static void Main()
+        static void Mlain()
         {
             String st = "Kannada";
 
