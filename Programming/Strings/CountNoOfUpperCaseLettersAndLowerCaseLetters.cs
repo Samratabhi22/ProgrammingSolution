@@ -8,7 +8,7 @@ namespace Programming.Strings
 {
     internal class CountNoOfUpperCaseLettersAndLowerCaseLetters
     {
-        public static void fain()
+        public static void Mbnain()
         {
             String s = "SofTwArE";
             int uppercase = 0;

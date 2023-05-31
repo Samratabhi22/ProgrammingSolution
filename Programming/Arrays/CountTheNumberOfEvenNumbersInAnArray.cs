@@ -8,7 +8,7 @@ namespace Programming
 {
     internal class CountTheNumberOfEvenNumbersInAnArray
     {
-        static void countEvenNumbersArray()
+        static void Mavcin()
         {
 
             int count = 0;
@@ -17,7 +17,7 @@ namespace Programming
             Console.WriteLine("Enter the size of Array : ");
             sizeofArray = int.Parse(Console.ReadLine());
             int[] arr = new int[sizeofArray];
-            Console.WriteLine("Enter the Ten Numbers : ");
+            Console.WriteLine("Enter the Numbers : ");
 
             for (int i = 0; i < sizeofArray; i++)
             {

@@ -8,7 +8,7 @@ namespace Programming
 {
     internal class AdditionOfTwoArrays
     {
-        static void wain()
+        static void Maien()
         {
             int [] a= { 1, 2, 3, 4, 8, 7, 9, 6, 5 };
             int [] b= { 4, 5, 6, 7, 8 };

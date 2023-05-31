@@ -8,7 +8,7 @@ namespace Programming.Strings
 {
     internal class FindMinimumLengthOfStringInStringArray
     {
-         static void ooain()
+         static void jvain()
         {
             String[] s = { "abc", "dv", "abcdd", "abcd", "ab" };
             String min_length = s[0];

@@ -8,7 +8,7 @@ namespace Programming.Strings
 {
     internal class CountDuplicatesWordsInAsentence
     {
-        public static void Main()
+        public static void Majjin()
         {
             
             String s = "I am I am a software engineer doing engineer I am software";
@@ -29,12 +29,13 @@ namespace Programming.Strings
                     {
                         count++;
                         //Set words[j] to 0 to avoid printing visited word    
-                        words[j] = "0";
+                       words[j] = "0";
                     }
                 }
                 //Displays the duplicate word if count is greater than 1    
                 if (count > 0 && words[i] != "0")
-                    Console.Write(words[i] + " ");
+                    //  Console.Write(words[i] + " ");
+                    Console.WriteLine(words[i] + "  is repeating  "+count+"  times ");
 
 
             }

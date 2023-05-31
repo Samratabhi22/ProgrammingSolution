@@ -8,7 +8,7 @@ namespace Programming
 {
     internal class PrintPositionInReverseWithoutDuplicates
     {
-        static void nnain()
+        static void Mdfain()
         {
             int[] a = { 4, 5, 4, 1, 2, 3, 5 };
             HashSet<int> set = new HashSet<int>();
@@ -25,7 +25,7 @@ namespace Programming
                     if (e == a[i])
                     {
                         Console.WriteLine(e + " position is  " + (i + 1));
-                        break;
+                      break;
                     }
                 }
 

@@ -8,7 +8,7 @@ namespace Programming
 {
     internal class CountDuplicatesInArray
     {
-        static void kain()
+        static void Mabgin()
         {
           
             int[] a = { 4, 5, 4, 1, 5, 2, 3, 0, 0 };

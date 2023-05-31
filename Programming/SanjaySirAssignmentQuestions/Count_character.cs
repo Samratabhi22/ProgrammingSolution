@@ -4,40 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Programming.Strings
+namespace Programming.SanjaySirAssignmentQuestions
 {
-    internal class CountNoOfDuplicatesInString
+    internal class Count_character
     {
-        public static void Msdain()
+        static void Maasdain()
         {
-            String st = "Kannada";
-
-            String s = st.ToLower();
+            
+           // System.out.println("6--> count_char_and_print_format char:count");
+            String s = "Malayalam";
+            s = s.ToLower();
             HashSet<Char> set = new HashSet<Char>();
             for (int i = 0; i < s.Length; i++)
             {
                 set.Add(s[i]);
-
             }
-            foreach (Char ch in set)
+            foreach (Char character in set)
             {
-                //System.out.println(ch+" ");
+
                 int count = 0;
                 for (int i = 0; i < s.Length; i++)
                 {
-                    if (ch == s[i])
+                    if (character == s[i])
                     {
                         count++;
                     }
-
                 }
-                if (count > 1)
-                {
-                    Console.WriteLine(ch + " is repeating  " + count + " times");
-                }
-
+                Console.Write(character + " : " + count+" , ");
             }
-
+            Console.WriteLine();
         }
     }
 }

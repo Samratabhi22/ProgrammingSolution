@@ -8,7 +8,7 @@ namespace Programming.Strings
 {
     internal class AdditionOfTwoDigitsNumberWithhSingleInString
     {
-        static void cain()
+        static void Matrin()
         {
             //String s="a11b12c2";
             String s = "a111b12c2";
@@ -26,7 +26,7 @@ namespace Programming.Strings
                 }
                 else
                 {
-                    sum = sum + tsum;//11+12=23
+                    sum = sum + tsum;//111+12=23
                     tsum = 0;//0
 
                 }
