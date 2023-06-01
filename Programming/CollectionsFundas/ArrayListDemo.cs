@@ -225,7 +225,7 @@ namespace Programming.CollectionsFundas
         }
     }
     public class ArrayListDemo8
-    {
+    {//Contains
         public static void Mangin()
         {
             ArrayList arrayList = new ArrayList()
@@ -329,6 +329,34 @@ namespace Programming.CollectionsFundas
             foreach (var item in arrayList)
             {
                 Console.Write($"{item} ");
+            }
+            Console.ReadKey();
+        }
+    }
+    public class ArrayListDemo12
+    {
+        //Cloning
+        public static void Martin()
+        {
+            ArrayList arrayList = new ArrayList()
+            {
+                    "India",
+                    "USA",
+                    "UK",
+                    "Denmark",
+                    "HongKong",
+            };
+            Console.WriteLine("Array List Elements:");
+            foreach (var item in arrayList)
+            {
+                Console.WriteLine($"{item} ");
+            }
+            //Creating a clone of the arrayList using Clone method
+            ArrayList cloneArrayList = (ArrayList)arrayList.Clone();
+            Console.WriteLine("\nCloned ArrayList Elements:");
+            foreach (var item in cloneArrayList)
+            {
+                Console.WriteLine($"{item} ");
             }
             Console.ReadKey();
         }
