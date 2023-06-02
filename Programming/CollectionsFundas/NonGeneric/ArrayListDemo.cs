@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Programming.CollectionsFundas
+namespace Programming.CollectionsFundas.NonGeneric
 {
     public class ArrayListDemo
     {
@@ -21,7 +21,7 @@ namespace Programming.CollectionsFundas
             arrayList1.Add(true); //Adding Boolean
             arrayList1.Add(4.5); //Adding double
             arrayList1.Add(null); //Adding null
-            
+
             foreach (object item in arrayList1)
             {
                 Console.WriteLine(item);
@@ -80,7 +80,7 @@ namespace Programming.CollectionsFundas
             arrayList1.Add("James"); //Adding String Value
             arrayList1.Add(true); //Adding Boolean
             arrayList1.Add(4.5); //Adding double
-            Console.WriteLine("Count of ArrayList is "+arrayList1.Count);
+            Console.WriteLine("Count of ArrayList is " + arrayList1.Count);
             //Iterating through foreach loop
             Console.WriteLine("\nUsing ForEach Loop");
             foreach (var item in arrayList1)
@@ -213,7 +213,7 @@ namespace Programming.CollectionsFundas
                     "UK",
                     "Denmark",
                     "Nepal",
-                   
+
             };
             int totalItems = arrayList.Count;
             Console.WriteLine(string.Format($"Total Items: {totalItems}, Capacity: {arrayList.Capacity}"));

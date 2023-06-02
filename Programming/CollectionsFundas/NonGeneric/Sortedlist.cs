@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Programming.CollectionsFundas
+namespace Programming.CollectionsFundas.NonGeneric
 {
     public class Sortedlist
     {
         //How to Create a SortedList and Add Elements and Access Elements
-        public static void Matin(string[] args)
+        public static void Mafin(string[] args)
         {
             //Creating sortedList Collection
             SortedList sortedList = new SortedList();
@@ -20,7 +20,7 @@ namespace Programming.CollectionsFundas
             sortedList.Add(5, "Five");
             sortedList.Add(4, "Four");
             sortedList.Add(2, "Two");
-            sortedList.Add(3, "Three");
+           // sortedList.Add("value", "Three");
             //Duplicate Key not allowed
             //System.ArgumentException: 'Item has already been added. Key in dictionary: '4'  Key being added: '4''
             //sortedList.Add(4, "Four");
@@ -29,7 +29,7 @@ namespace Programming.CollectionsFundas
             //Duplicate Value is allowed
             sortedList.Add(7, "Five");
             //In this case string key is not valid, throw Exception
-            //sortedList.Add("Ten", "Ten");
+           // sortedList.Add('j', "Ten");
             //Accessing SortedList using For loop
             Console.WriteLine("Accessing SortedList using For loop");
             for (int x = 0; x < sortedList.Count; x++)
@@ -167,7 +167,7 @@ namespace Programming.CollectionsFundas
     class Sortedlist5
     {
         //use of the CopyTo method of the Non-Generic SortedList Collection Class
-        public static void Main(string[] args)
+        public static void Mtain(string[] args)
         {
             //Creating sortedList using Object Initializer
             SortedList sortedList = new SortedList
@@ -184,14 +184,14 @@ namespace Programming.CollectionsFundas
             }
             DictionaryEntry[] myTargetArray = new DictionaryEntry[5];
             sortedList.CopyTo(myTargetArray, 1);
-            
+
             Console.WriteLine("\nCopyTo Method to Copy Keys and values:");
             for (int i = 0; i < myTargetArray.Length; i++)
             {
                 Console.WriteLine($"{myTargetArray[i].Key} : {myTargetArray[i].Value}");
             }
-            Object[] myObjArrayKey = new Object[5];
-            Object[] myObjArrayValue = new Object[5];
+            object[] myObjArrayKey = new object[5];
+            object[] myObjArrayValue = new object[5];
             Console.WriteLine("\nCopyTo Method to Copy Keys:");
             sortedList.Keys.CopyTo(myObjArrayKey, 1);
             foreach (var key in myObjArrayKey)

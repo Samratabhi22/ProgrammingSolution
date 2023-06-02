@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace HasntableExample
+namespace Programming.CollectionsFundas.NonGeneric
 {
     class HashTable
     {
@@ -204,7 +204,7 @@ namespace HasntableExample
             {
                 Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
             }
-           // Copying the Hashtable to an object array
+            // Copying the Hashtable to an object array
             DictionaryEntry[] myArray = new DictionaryEntry[hashtable.Count];
             hashtable.CopyTo(myArray, 0);
             Console.WriteLine("\nHashtable Copy Array Elements:");
@@ -212,8 +212,8 @@ namespace HasntableExample
             {
                 Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
             }
-            Object[] myObjArrayKey = new Object[hashtable.Count];
-            Object[] myObjArrayValue = new Object[hashtable.Count];
+            object[] myObjArrayKey = new object[hashtable.Count];
+            object[] myObjArrayValue = new object[hashtable.Count];
             Console.WriteLine("\nCopyTo Method to Copy Keys:");
             hashtable.Keys.CopyTo(myObjArrayKey, 0);
             foreach (var key in myObjArrayKey)
